@@ -1,5 +1,7 @@
 package com.rivers.utils.dto;
 
+import com.google.common.collect.Lists;
+
 import java.util.List;
 
 /**
@@ -8,7 +10,7 @@ import java.util.List;
 public class TreeNode {
 	protected int id;
 	protected int parentId;
-	protected List<TreeNode> children = null;
+	protected List<TreeNode> children = Lists.newArrayList();
 
 	public void add(TreeNode node) {
 		children.add(node);
